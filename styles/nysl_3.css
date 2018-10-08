@@ -1,0 +1,334 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ------A PARTIR DE ACA EMPIEZA EL CODIGO NUEVO--------------------------------------------------------------------------------------- */
+body {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  border-left: 10px solid black;
+  font-size: 20px;
+  height: 1285px;
+  width: 100vw;
+  min-width: 1100px;
+}
+header {
+  box-sizing: border-box;
+  height: 335px;
+  width: 100%;
+  background-image: url(images/imagencss3.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 70%;
+}
+/*-------------------------NAV-----------------------------------------------------*/
+nav {
+  position: absolute;
+  top: 210px;
+  height: 55px;
+  width: 100vw;
+  min-width: 1100px;
+  background: black;
+  text-align: center;
+}
+nav li {
+  display: inline-block;
+  text-transform: uppercase;
+}
+nav a {
+  text-decoration-line: none;
+  color: white;
+  line-height: 56px;
+  padding: 16px 16px;
+  transition: color 0.2s ease-out, box-shadow 0.2s ease;
+}
+nav a:hover {
+  color: #ff7b29;
+  box-shadow: inset 0 0 40px forestgreen;
+}
+nav a.current {
+  background: forestgreen;
+  color: white;
+}
+/*-------------------------NAVˆ-----------------------------------------------------*/
+.logo {
+  position: absolute;
+  height: 130px;
+  top: 25px;
+  left: 40px;
+}
+.register_button, .register_button2 {
+  position: absolute;
+  color: black;
+  font-weight: bold;
+  text-decoration-line: none;
+  font-size: 17px;
+  padding: 10px 20px;
+  top: 218px;
+  left: 25px;
+  background: lightgreen;
+  border: 1px solid #ff7b29;
+  border-radius: 15px;
+  box-shadow: inset 0 0 10px #ff7b29;
+  transition: color 0.2s ease-out, box-shadow 0.2s ease;
+  z-index: 1;
+}
+.register_button:hover {
+  color: white;
+  box-shadow: inset 0 0 40px forestgreen;
+}
+.register_button2 {
+  color: white;
+  box-shadow: inset 0 0 40px forestgreen;
+}
+section, .mail {
+  box-sizing: border-box;
+  padding-left: 40px;
+  padding-top: 40px;
+  height: 950px;
+  width: 100%;
+  background-image: url(images/Picture1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  overflow: auto;
+}
+h1 {
+  height: 105px;
+  line-height: 45px;
+  width: 350px;
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 185px;
+  padding-top: 45px;
+}
+h2 {
+  position: relative;
+  top: 115px;
+  font-size: 40px;
+  height: 70px;
+  line-height: 65px;
+  background: linear-gradient(to right, forestgreen, lightgrey);
+  padding-left: 40px;
+}
+h3 {
+  font-size: 25px;
+  width: 70%;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+h4 {
+  font-size: 28px;
+  width: 30%;
+  border-bottom: 2px solid green;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+h5 {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+p {
+  margin-left: 15px;
+  line-height: 40px;
+  margin-bottom: 40px;
+  width: 90%;
+}
+b {
+  font-weight: bold;
+}
+i {
+  font-style: italic;
+}
+/*------------------RULES AND POLICIES LIST--------------------------------------------------------------------*/
+.policies {
+  font-size: 13px;
+}
+.policies-col-1, .policies-col-2 {
+  box-sizing: border-box;
+  float: left;
+  width: 50%;
+  padding-right: 2%;
+}
+ul {
+  list-style-type: square;
+}
+ul ul {
+  list-style-type: circle;
+}
+ol {
+  list-style-type: decimal;
+}
+ol ol {
+  list-style-type: lower-alpha;
+}
+.policies li {
+  margin: 5px 0 5px 30px;
+}
+.policies h4 {
+  width: 80%;
+  margin-bottom: 30px;
+}
+/*--------------------------GAME INFO--------------------------------------------------------------------*/
+.schedule h3{
+  text-decoration: underline;
+  font-size: 20px;
+}
+.schedule h4 {
+  border: none;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+.schedule p {
+  margin-left: 0;
+  line-height: 25px;
+  margin-bottom: 25px;
+}
+.schedule p:nth-of-type(1) {
+  margin-top: 50px;
+}
+.schedule p:nth-of-type(2) {
+  margin-bottom: 50px;
+}
+.schedule p:nth-of-type(4) {
+  float: left;
+  width: 45%;
+}
+.schedule p:nth-of-type(5) {
+  float: left;
+  width: 44%;
+  text-align: right;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 800px;
+  margin: 30px 0;
+}
+th {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 22px;
+  text-align: left;
+  padding: 2px;
+}
+td {
+  padding: 2px;
+}
+.table-date {
+  padding-left: 30px;
+  width: 200px;
+}
+.table-loc {
+  width: 180px;
+}
+h6 {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0 5px 10px 5px;
+  text-decoration: underline;
+  text-align: center;
+}
+.google_maps {
+  width: 80%;
+  margin-left: -20px;
+}
+.maps {
+  display: inline-block;
+  padding: 10px;
+  margin: 20px;
+  width: 230px;
+  border: 2px dotted black;
+}
+object {
+  display: block;
+  margin: auto;
+}
+/*--------------------------REGISTRATION FORM--------------------------------------------------------------------*/
+form {
+  width: 830px;
+  border: 3px solid black;
+  border-radius: 20px;
+  background: lightgrey;
+  margin-bottom: 50px;
+}
+fieldset {
+  box-sizing: border-box;
+  padding: 30px;
+  width: 100%;
+}
+.reg_text {
+  line-height: 40px;
+}
+.jersey, .shorts {
+  display: inline-block;
+  float: left;
+  width: 50%;
+}
+.permission p {
+  font-size: 15px;
+  width: 95%;
+  line-height: 20px;
+  margin-bottom: 25px;
+}
+label {
+  margin-left: 10px;
+}
+.checkmargin {
+  margin-left: 35px;
+}
+input {
+  width: 200px;
+}
+input[type="radio"], input[type="checkbox"] {
+  height: 20px;
+  width: 20px;
+}
+button {
+  margin-left: 700px;
+  font-size: 15px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  padding: 3px 21px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+button:hover {
+  background: #1E90FF;
+}
